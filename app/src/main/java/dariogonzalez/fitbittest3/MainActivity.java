@@ -84,7 +84,11 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
 //                executeAction("https://api.fitbit.com/1/user/-/activities/list.json?beforeDate=2015-05-19&offset=0&limit=100&sort=desc");
-                executeAction("https://api.fitbit.com/1/user/-/activities/calories/date/2015-05-19/1d/15min/time/12:20/12:45.json");
+//                executeAction("https://api.fitbit.com/1/user/-/activities/calories/date/2015-07-21/1d/15min/time/12:20/12:45.json");
+//                executeAction("https://api.fitbit.com/1/user/-/activities/steps/date/2015-10-23/1d/15min.json");
+
+                //see documentation here https://dev.fitbit.com/docs/activity/, Get Activity Intraday Time Series
+                executeAction("https://api.fitbit.com/1/user/-/activities/steps/date/2015-10-20/1d/15min.json");
 
             }
         });
